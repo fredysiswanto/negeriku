@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <link rel="stylesheet" href="/assets/stayle.css" />
+</head>
+
+<body class="bg-gray-200">
+  <nav class="bg-green-500 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="#" class="text-white text-xl font-bold">My Website</a>
+      <button id="menu-toggle" class="text-white md:hidden">
+        ☰
+      </button>
+      <ul id="menu" class="hidden md:flex space-x-4 text-white">
+        <li><a href="#" class="hover:underline">Home</a></li>
+        <li><a href="#" class="hover:underline">About</a></li>
+        <li><a href="#" class="hover:underline">Services</a></li>
+        <li><a href="#" class="hover:underline">Contact</a></li>
+      </ul>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden bg-green-600 mt-5 p-4">
+      <a href="#" class="block text-white py-2">Home</a>
+      <a href="#" class="block text-white py-2">About</a>
+      <a href="#" class="block text-white py-2">Services</a>
+      <a href="#" class="block text-white py-2">Contact</a>
+    </div>
+  </nav>
+
+  <div class=" bg-amber-500 w-min-[300px] h-min-[300px]">
+    <!-- <div class="flex justify-center items-center h-screen bg-gray-100 ">
+      <div class="w-4/5 h-4/5 bg-contain bg-center rounded-lg shadow-lg"
+        style="background-image:url('./assets/images/indonesia.svg')"> </div>
+      <img src="./assets/images/indonesia.svg" alt="" srcset="">
+    </div> -->
+    <div id="svg-container" class="w-4/5 h-4/5 flex justify-center items-center bg-white rounded-lg shadow-lg p-4">
+    </div>
+  </div>
+  <div class="relative group">
+    <button class="bg-blue-500 text-white px-4 py-2 rounded-lg">
+      Hover Me
+    </button>
+
+    <!-- Tooltip -->
+    <div id="tooltip"
+      class="absolute left-1/2 -translate-x-1/2 mt-2 w-40 bg-gray-800 text-white text-sm p-2 rounded-lg hidden opacity-0 transition-opacity duration-300">
+      Ini adalah tooltip!
+    </div>
+  </div>
+  <script src="scr/script.js"></script>
+</body>
+
+</html>
